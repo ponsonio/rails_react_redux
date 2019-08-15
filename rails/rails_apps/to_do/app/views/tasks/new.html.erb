@@ -1,0 +1,8 @@
+<h1>Tasks#new</h1>
+<ul class="error-list">
+    <%=  @task.errors.full_messages.each do |error| %>
+        <li><%= error%></li>
+    <%end%>
+</ul>
+
+<%= render 'form' %>
